@@ -1,0 +1,59 @@
+/*********TYPOGRAPHY***********/
+@font-face {
+    font-family: "Poppins";
+    src: url("../../fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../../fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("../../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("../../fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-display: swap;
+}
+
+/************Variables*************/
+@media (min-width: 768px) {
+    :root {
+        --container-size: 48px;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        --container-size: 96px;
+    }
+}
+
+@media (min-width: 1366px) {
+    :root {
+        --container-size: calc((100% - 1174px) / 2);
+    }
+}
+
+/************container************/
+
+.container {
+    margin-right: var(--container-size);
+    margin-left: var(--container-size);
+}
+
+/**************body*****************/
+html,
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+

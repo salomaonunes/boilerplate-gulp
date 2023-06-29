@@ -1,0 +1,29 @@
+{
+  "name": "lp-estacio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "browser-sync": "^2.27.10",
+    "cssnano": "^5.1.11",
+    "express": "^4.18.1",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-terser": "^2.1.0",
+    "nodemon": "^2.0.18",
+    "postcss": "^8.4.14",
+    "sass": "^1.52.3"
+  },
+  "devDependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}
