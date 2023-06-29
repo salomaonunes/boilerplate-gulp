@@ -1,7 +1,7 @@
-# LP Estacio
+# Gulp boilerplate
 
 ## 📖 About
-This is Estacio's Landing Page project repository. For details, see below.
+This is a simple gulp boilerplate for vanilla JavaScript websites
 
 ## 🟢 Status
 In progress
