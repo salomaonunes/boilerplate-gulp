@@ -6,6 +6,7 @@ const cssnano = require('cssnano');
 const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 const browsersync = require('browser-sync').create();
+const eslint = require('gulp-eslint');
 
 function scssTask(){
     return src('scss/**/*.scss', { sourcemaps: true})
@@ -43,11 +44,20 @@ function watchTask(){
     watch(['scss/**/*.scss', 'js/**/*.js'], series(scssTask, jsTask, browsersyncReload));
 }
 
+//LintTask
+ function lintTask(){
+    return src(['js/**/*.js'])
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failOnError())
+}
+
 //Default Gulp Task
 exports.default = series(
     scssTask,
     jsTask,
     browsersyncServe,
-    watchTask
+    watchTask,
+    lintTask
 );
 
